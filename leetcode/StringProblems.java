@@ -16,7 +16,7 @@ public class StringProblems {
                 }
             }
         }
-        System.out.println(Arrays.deepToString(list.toArray()));
+        // System.out.println(Arrays.deepToString(list.toArray()));
         return list.size();
     }
 

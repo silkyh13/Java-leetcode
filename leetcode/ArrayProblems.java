@@ -4,6 +4,20 @@ public class ArrayProblems {
     public static void basic () {
         System.out.println("hello meow");
     }
+    public static int removeDuplicates(int[] nums) {
+        if (nums.length < 2) return nums.length;
+        HashMap<Integer, Integer> sumVals = new HashMap<Integer, Integer>();
+        int count = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (!sumVals.containsKey(nums[i])) {
+                nums[count] = nums[i];
+                count++;
+            sumVals.put(nums[i], i);
+            }
+        }
+        return sumVals.size();
+    }
+
    public static int [] topKfreq(int[] nums, int k) {
        HashMap<Integer, Integer> hashy = new HashMap <Integer,Integer>();
        for (int i = 0; i < nums.length; i++) {

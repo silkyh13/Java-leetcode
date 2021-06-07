@@ -9,9 +9,12 @@ public class TestSolutions {
         int k = 2;
         int [] topKFreq= ArrayProblems.topKfreq(nums, k);
         ArrayProblems.basic();
-        System.out.println(Arrays.toString(topKFreq));
+        System.out.println("topKFreq"+ " " + Arrays.toString(topKFreq));
+        int removeDuplicates = ArrayProblems.removeDuplicates(nums);
+        System.out.println("removeDuplicates" + " " +removeDuplicates);
+
         int countSubstrings = StringProblems.countSubstrings("aaaa");
-        System.out.println(countSubstrings);
+        System.out.println("countSubstrings" + " " + countSubstrings);
 
     }
 }
