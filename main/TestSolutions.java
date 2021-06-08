@@ -6,15 +6,18 @@ import leetcode.StringProblems;
 public class TestSolutions {
     public static void main(String[] args) {
         int [] nums = {1,2,3,4,5,6,6,7};
-        int k = 2;
-        int [] topKFreq= ArrayProblems.topKfreq(nums, k);
-        ArrayProblems.basic();
-        System.out.println("topKFreq"+ " " + Arrays.toString(topKFreq));
-        int removeDuplicates = ArrayProblems.removeDuplicates(nums);
-        System.out.println("removeDuplicates" + " " +removeDuplicates);
+        int k = 3;
+        int [] twoSum = ArrayProblems.twoSum(nums, k);
+        System.out.println("twoSum"+ " " + Arrays.toString(twoSum));
 
-        int countSubstrings = StringProblems.countSubstrings("aaaa");
-        System.out.println("countSubstrings" + " " + countSubstrings);
+        // int [] topKFreq= ArrayProblems.topKfreq(nums, k);
+        // ArrayProblems.basic();
+        // System.out.println("topKFreq"+ " " + Arrays.toString(topKFreq));
+        // int removeDuplicates = ArrayProblems.removeDuplicates(nums);
+        // System.out.println("removeDuplicates" + " " +removeDuplicates);
+
+        // int countSubstrings = StringProblems.countSubstrings("aaaa");
+        // System.out.println("countSubstrings" + " " + countSubstrings);
 
     }
 }

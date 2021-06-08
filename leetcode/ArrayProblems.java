@@ -4,6 +4,25 @@ public class ArrayProblems {
     public static void basic () {
         System.out.println("hello meow");
     }
+    public static int[] twoSum(int[] nums, int target) {
+        int solution[] = new int[2];
+        HashMap<Integer, Integer> sumVals = new HashMap<Integer, Integer>();
+
+        for(int i=0; i<nums.length; i++) {
+            sumVals.put(nums[i], i);
+        }
+
+        for(int i=0; i<nums.length; i++) {
+            boolean containsKey = sumVals.containsKey(target-nums[i]);
+            int index = containsKey ? sumVals.get(target-nums[i]) : -1;
+            if(containsKey && index != i) {
+                solution[0] = i;
+                solution[1] = index;
+            }
+        }
+
+        return solution;
+    }
     public static int removeDuplicates(int[] nums) {
         if (nums.length < 2) return nums.length;
         HashMap<Integer, Integer> sumVals = new HashMap<Integer, Integer>();
